@@ -1,0 +1,14 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.active {
+		@apply bg-neutral-50 text-black;
+	}
+
+	.inactive {
+		@apply text-gray-300 hover:bg-neutral-300 hover:text-black;
+	}
+}
