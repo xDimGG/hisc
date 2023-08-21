@@ -1,9 +1,15 @@
+<script>
+import { language, i } from '@inlang/sdk-js';
+
+console.log(language);
+</script>
+
 <main class="mx-auto w-full max-w-screen-xl my-5">
 	<section class="text-gray-600 body-font">
 		<div class="container px-5 py-24 mx-auto flex flex-wrap">
 			<div class="flex w-full mb-20 flex-wrap md:flex-row flex-col md:text-left text-center">
 				<h1 class="sm:text-3xl text-2xl font-extrabold text-gray-900 lg:mb-0 mb-4">Happy Island Senior Center</h1>
-				<p class="md:pl-6 text-2xl leading-relaxed">A Place to Find Friends!</p>
+				<p class="md:pl-6 text-2xl leading-relaxed">{i("slogan")}</p>
 			</div>
 			<div class="flex flex-wrap md:-m-2 -m-1 md:flex-row flex-col">
 				<div class="flex flex-wrap md:w-1/2">

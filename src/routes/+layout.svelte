@@ -1,7 +1,9 @@
 <script>
 import '../app.postcss';
-import { language, languageSet } from '../stores/language';
+import { language as languageStore, languageSet } from '../stores/language';
 import { page } from '$app/stores';
+import { switchLanguage } from '@inlang/sdk-js';
+
 let selectOpen = languageSet;
 
 const LANGUAGES = {
@@ -21,6 +23,10 @@ const LANGUAGES = {
 		name: 'Español',
 		icon: 'https://raw.githubusercontent.com/google/region-flags/gh-pages/svg/ES.svg',
 	},
+	'ar': {
+		name: 'العربية',
+		icon: 'https://raw.githubusercontent.com/google/region-flags/gh-pages/svg/SA.svg',
+	},
 };
 
 const PAGES = [
@@ -35,7 +41,8 @@ let navOpen = false;
 
 const select = (lang) => {
 	selectOpen = false;
-	language.set(lang);
+	languageStore.set(lang);
+  switchLanguage(lang);
 };
 
 $: path = $page.url.pathname;
@@ -124,7 +131,7 @@ $: path = $page.url.pathname;
         </div>
       </div>
       <div class="absolute inset-y-0 right-0 flex items-center cursor-pointer">
-        <img src={LANGUAGES[$language].icon} alt={LANGUAGES[$language].name} width="40" height="40" on:click={() => selectOpen = true} />
+        <img src={LANGUAGES[$languageStore].icon} alt={LANGUAGES[$languageStore].name} width="40" height="40" on:click={() => selectOpen = true} />
         <span class="sr-only">Change language</span>
       </div>
     </div>
