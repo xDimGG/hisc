@@ -9,7 +9,7 @@ export async function defineConfig(env) {
 	return {
 		referenceLanguage: 'en',
 		plugins: [
-			jsonPlugin({ pathPattern: '' }),
+			jsonPlugin({ pathPattern: './translations/{language}.json' }),
 			standardLintRules(),
 		],
 	};
