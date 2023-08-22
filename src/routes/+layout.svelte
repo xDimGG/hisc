@@ -48,19 +48,28 @@ const select = (lang) => {
 $: path = $page.url.pathname;
 </script>
 
+<svelte:window on:keydown={e => e.key === 'Escape' && (selectOpen = false)} />
+
 {#if selectOpen}
-  <div class="fixed w-screen h-screen z-10 bg-blue-400">
-    <div class="flex flex-col justify-center items-center h-full">
+<div class="fixed w-screen h-screen z-10 bg-blue-400">
+  <div class="flex flex-col justify-center items-center h-full">
+    <div>
       {#each Object.entries(LANGUAGES) as [code, { name, icon }]}
-        <div class="flex gap-2 p-1 hover:cursor-pointer items-center" on:click={() => select(code)}>
+        <div
+          class="flex gap-2 p-1 hover:cursor-pointer items-center"
+          on:click={() => select(code)}
+          on:keypress={() => select(code)}
+          role="button"
+          tabindex="0"
+        >
           <img src="{icon}" width="50" height="50" alt={name} />
           <span class="text-white text-3xl">{name}</span>
         </div>
       {/each}
     </div>
   </div>
-{/if}
-
+</div>
+{:else}
 <nav class="bg-blue-700 {navOpen ? 'open' : 'closed'}" style={`--max-height-var: ${PAGES.length * 44 + 16}px`}>
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
@@ -130,8 +139,8 @@ $: path = $page.url.pathname;
           </div>
         </div>
       </div>
-      <div class="absolute inset-y-0 right-0 flex items-center cursor-pointer">
-        <img src={LANGUAGES[$languageStore].icon} alt={LANGUAGES[$languageStore].name} width="40" height="40" on:click={() => selectOpen = true} />
+      <div class="absolute inset-y-0 right-0 flex items-center cursor-pointer"  on:keypress={() => selectOpen = true}  on:click={() => selectOpen = true} role="button" tabindex="0">
+        <img src={LANGUAGES[$languageStore].icon} alt={LANGUAGES[$languageStore].name} width="40" height="40" />
         <span class="sr-only">{i("tooltip.change_language")}</span>
       </div>
     </div>
@@ -143,7 +152,7 @@ $: path = $page.url.pathname;
         <a
           {href}
           class={`${path === href ? 'active' : 'inactive'} block rounded-md px-3 py-2 text-base font-medium`}
-          aria-current="page">{name}</a
+          aria-current="page">{i(`${name}.title`)}</a
         >
       {/each}
     </div>
@@ -275,6 +284,7 @@ $: path = $page.url.pathname;
     </div>
   </div>
 </footer>
+{/if}
 
 <style>
 .mobile-menu {

@@ -1,1 +1,26 @@
-{}
+{
+  "slogan": "¡Un lugar para encontrar amigos!",
+  "home.title": "Hogar",
+  "services.title": "Servicios",
+  "activities.title": "Actividades",
+  "classes.title": "Clases",
+  "contact.title": "Contáctenos",
+  "tooltip.open_main_menu": "Abrir menú principal",
+  "tooltip.change_language": "Cambiar idioma",
+  "footer.operating_hours": "Horas de funcionamiento",
+  "home.sec1.title": "Quienes somos",
+  "home.sec1.content": "Taza de cobre, horquilla de prueba, reliquia freegan, planta de aire neutra, tacos prensados en frío, bolso de mano con barba. Heirloom echo park mlkshk bolso de mano orillo pollo caliente auténtica trufa de cúrcuma hexágono cambray resistente.",
+  "home.sec2.title": "Dónde estamos",
+  "home.sec2.content": "Taza de cobre, horquilla de prueba, reliquia freegan, planta de aire neutra, tacos prensados en frío, bolso de mano con barba. Heirloom echo park mlkshk bolso de mano orillo pollo caliente auténtica trufa de cúrcuma hexágono cambray resistente.",
+  "home.follow_fb": "¡Síguenos en Facebook!",
+  "contact.greet": "¿Alguna pregunta sobre nuestro servicio? ¡Comuníquese y permítanos ayudarlo!",
+  "contact.form.email": "Tu correo electrónico",
+  "contact.form.subject": "Sujeto",
+  "contact.form.email_placeholder": "Ingrese su tema aquí",
+  "contact.form.message_placeholder": "Introduzca su mensaje aquí",
+  "contact.form.message": "Mensaje",
+  "contact.form.send": "Enviar mensaje",
+  "contact.address": "Dirección",
+  "contact.phone": "Número de teléfono",
+  "contact.email": "Correo electrónico"
+}

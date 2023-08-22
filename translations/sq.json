@@ -1,3 +1,26 @@
 {
-  "slogan": "Vend për të Gjetur Miq!"
+  "slogan": "Vend për të Gjetur Miq!",
+  "home.title": "Shtëpi",
+  "services.title": "Shërbimet",
+  "activities.title": "Aktivitetet",
+  "classes.title": "Klasat",
+  "contact.title": "Na kontaktoni",
+  "tooltip.open_main_menu": "Hapni menunë kryesore",
+  "tooltip.change_language": "Ndrysho gjuhën",
+  "footer.operating_hours": "Orari i punës",
+  "home.sec1.title": "Kush jemi ne",
+  "home.sec1.content": "Filxhan bakri me sfungjer sfungjer derdhur-mbi trashegimia freegan neutra bime ajri me presion te ftohte tacos qese me çante mjekre. Heirloom echo park mlkshk tote bag selvage pulë e nxehtë autentike tumerik truffaut gjashtëkëndësh try-hard chambray.",
+  "home.sec2.title": "Ku jemi ne",
+  "home.sec2.content": "Filxhan bakri me sfungjer sfungjer derdhur-mbi trashegimia freegan neutra bime ajri me presion te ftohte tacos qese me çante mjekre. Heirloom echo park mlkshk tote bag selvage pulë e nxehtë autentike tumerik truffaut gjashtëkëndësh try-hard chambray.",
+  "home.follow_fb": "Na ndiqni në Facebook!",
+  "contact.greet": "Ndonjë pyetje në lidhje me shërbimin tonë? Ju lutemi na kontaktoni dhe na lejoni t'ju ndihmojmë!",
+  "contact.form.email": "Email-i juaj",
+  "contact.form.subject": "Subjekti",
+  "contact.form.email_placeholder": "Shkruani temën tuaj këtu",
+  "contact.form.message_placeholder": "Shkruani mesazhin tuaj këtu",
+  "contact.form.message": "Mesazh",
+  "contact.form.send": "Dërgoni mesazh",
+  "contact.address": "Adresë",
+  "contact.phone": "Numri i telefonit",
+  "contact.email": "Email"
 }

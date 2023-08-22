@@ -1,1 +1,26 @@
-{}
+{
+  "slogan": "مكان للعثور على الأصدقاء!",
+  "home.title": "بيت",
+  "services.title": "خدمات",
+  "activities.title": "أنشطة",
+  "classes.title": "الطبقات",
+  "contact.title": "اتصل بنا",
+  "tooltip.open_main_menu": "افتح القائمة الرئيسية",
+  "tooltip.change_language": "تغيير اللغة",
+  "footer.operating_hours": "ساعات العمل",
+  "home.sec1.title": "من نحن",
+  "home.sec1.content": "كوب نحاسي، مذراة صلبة، صب فوق فريجان هيرلوم نيوترا إير بلانت، حقيبة تاكو مضغوطة على البارد، حقيبة حمل اللحية. حقيبة حمل Heirloom Echo Park mlkshk من سيلفاج الدجاج الساخن الأصلي، تروفو، سداسي، جرب شامبراي.",
+  "home.sec2.title": "أين نحن",
+  "home.sec2.content": "كوب نحاسي، مذراة صلبة، صب فوق فريجان هيرلوم نيوترا إير بلانت، حقيبة تاكو مضغوطة على البارد، حقيبة حمل اللحية. حقيبة حمل Heirloom Echo Park mlkshk من سيلفاج الدجاج الساخن الأصلي، تروفو، سداسي، جرب شامبراي.",
+  "home.follow_fb": "تابعونا على الفيسبوك!",
+  "contact.greet": "هل لديك أي أسئلة بخصوص خدمتنا؟ يرجى التواصل معنا والسماح لنا بمساعدتك!",
+  "contact.form.email": "بريدك الالكتروني",
+  "contact.form.subject": "موضوع",
+  "contact.form.email_placeholder": "أدخل الموضوع الخاص بك هنا",
+  "contact.form.message_placeholder": "أدخل رسالتك هنا",
+  "contact.form.message": "رسالة",
+  "contact.form.send": "أرسل رسالة",
+  "contact.address": "عنوان",
+  "contact.phone": "رقم التليفون",
+  "contact.email": "بريد إلكتروني"
+}
