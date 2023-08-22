@@ -1,7 +1,5 @@
 <script>
-import { language, i } from '@inlang/sdk-js';
-
-console.log(language);
+import { i } from '@inlang/sdk-js';
 </script>
 
 <main class="mx-auto w-full max-w-screen-xl my-5">
@@ -41,8 +39,8 @@ console.log(language);
 	<section class="text-gray-600 body-font">
 		<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
 			<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-				<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Who are We</h1>
-				<p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+				<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{i("home.sec1.title")}</h1>
+				<p class="mb-8 leading-relaxed">{i("home.sec1.content")}</p>
 			</div>
 			<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
 				<img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
@@ -56,15 +54,15 @@ console.log(language);
 				<iframe title="555 Greeley Ave, Staten Island, NY 10306" class="flex mx-auto" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6061.335800985154!2d-74.0999278651123!3d40.57101050000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c249b065ae2a01%3A0x53030ae851d71804!2sHappy%20Island%20Senior%20Center!5e0!3m2!1sen!2sus!4v1688757287062!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 			<div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center mb-16 md:mb-0">
-				<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Where are We</h1>
-				<p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+				<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{i("home.sec2.title")}</h1>
+				<p class="mb-8 leading-relaxed">{i("home.sec2.content")}</p>
 			</div>
 		</div>
 	</section>
 
 
 	<div class="grid grid-cols-1">
-		<h1 class="text-3xl text-center mb-3">Follow us on Facebook!</h1>
+		<h1 class="text-3xl text-center mb-3">{i("home.follow_fb")}</h1>
 		<div class="fb-page inline-block mb-3" style="display:flex;justify-content:center;"
 			data-href="https://www.facebook.com/p/Happy-Island-Senior-Center-100063640447417/" data-small-header="false"
 			data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">

@@ -1,3 +1,26 @@
 {
-  "slogan": "A Place to Find Friends!"
+  "slogan": "A Place to Find Friends!",
+  "home.title": "Home",
+  "services.title": "Services",
+  "activities.title": "Activities",
+  "classes.title": "Classes",
+  "contact.title": "Contact Us",
+  "tooltip.open_main_menu": "Open main menu",
+  "tooltip.change_language": "Change language",
+  "footer.operating_hours": "Operating Hours",
+  "home.sec1.title": "Who are We",
+  "home.sec1.content": "Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.",
+  "home.sec2.title": "Where are We",
+  "home.sec2.content": "Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.",
+  "home.follow_fb": "Follow us on Facebook!",
+  "contact.greet": "Any questions regarding our service? Please reach out and allow us to assist you!",
+  "contact.form.email": "Your email",
+  "contact.form.subject": "Subject",
+  "contact.form.email_placeholder": "Enter your subject here",
+  "contact.form.message_placeholder": "Enter your message here",
+  "contact.form.message": "Message",
+  "contact.form.send": "Send message",
+  "contact.address": "Address",
+  "contact.phone": "Phone Number",
+  "contact.email": "Email"
 }

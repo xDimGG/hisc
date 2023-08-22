@@ -2,7 +2,7 @@
 import '../app.postcss';
 import { language as languageStore, languageSet } from '../stores/language';
 import { page } from '$app/stores';
-import { switchLanguage } from '@inlang/sdk-js';
+import { i, switchLanguage } from '@inlang/sdk-js';
 
 let selectOpen = languageSet;
 
@@ -30,11 +30,11 @@ const LANGUAGES = {
 };
 
 const PAGES = [
-  ['Home', '/'],
-  ['Services', '/services'],
-  ['Activities', '/activities'],
-  ['Classes', '/classes'],
-  ['Contact Us', '/contact'],
+  ['home', '/'],
+  ['services', '/services'],
+  ['activities', '/activities'],
+  ['classes', '/classes'],
+  ['contact', '/contact'],
 ];
 
 let navOpen = false;
@@ -72,7 +72,7 @@ $: path = $page.url.pathname;
           aria-expanded="false"
 					on:click={() => navOpen = !navOpen}
         >
-          <span class="sr-only">Open main menu</span>
+          <span class="sr-only">{i("tooltip.open_main_menu")}</span>
           <!--
 						Icon when menu is closed.
 
@@ -124,7 +124,7 @@ $: path = $page.url.pathname;
               <a
                 {href}
                 class={`${path === href ? 'active' : 'inactive'} rounded-md px-3 py-2 text-sm font-medium`}
-                aria-current="page">{name}</a
+                aria-current="page">{i(`${name}.title`)}</a
               >
             {/each}
           </div>
@@ -132,7 +132,7 @@ $: path = $page.url.pathname;
       </div>
       <div class="absolute inset-y-0 right-0 flex items-center cursor-pointer">
         <img src={LANGUAGES[$languageStore].icon} alt={LANGUAGES[$languageStore].name} width="40" height="40" on:click={() => selectOpen = true} />
-        <span class="sr-only">Change language</span>
+        <span class="sr-only">{i("tooltip.change_language")}</span>
       </div>
     </div>
   </div>
@@ -175,7 +175,7 @@ $: path = $page.url.pathname;
           <h2
             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
           >
-            Operating Hours
+            {i("footer.operating_hours")}
           </h2>
           <table
             class="dark:text-gray-300 font-light border-none"
