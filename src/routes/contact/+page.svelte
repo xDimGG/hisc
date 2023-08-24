@@ -3,6 +3,10 @@ import { page } from '$app/stores';
 import { i } from '@inlang/sdk-js';
 </script>
 
+<svelte:head>
+	<title>{i("contact.title")} - Happy Island</title>
+</svelte:head>
+
 <section class="bg-white">
   <div class="py-8 lg:py-12 px-4 mx-auto max-w-screen-md">
 		<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">{i("contact.title")}</h2>

@@ -1,9 +1,6 @@
 {
   "slogan": "A Place to Find Friends!",
   "home.title": "Home",
-  "services.title": "Services",
-  "activities.title": "Activities",
-  "classes.title": "Classes",
   "contact.title": "Contact Us",
   "tooltip.open_main_menu": "Open main menu",
   "tooltip.change_language": "Change language",
@@ -27,7 +24,60 @@
   "contact.success.title": "Thank you!",
   "contact.facebook": "Facebook Page",
   "home.medicaid": "Free for seniors 65+ with Medicaid and Medicare",
-  "classes.language.content": "Explore the magic of language at Happy Island Senior Center's English classes. Created just for seniors who are starting to learn English, our program is like a friendly hand to help you step by step. Our teachers know it's not easy, so they make learning fun and simple. From everyday phrases to friendly chats, we'll show you how to use English in your daily life. No worries if it's your first time – we're here to help. Let's learn and connect together at Happy Island Senior Center!",
-  "classes.language.title": "English Classes",
-  "classes.description": "At Happy Island Senior Center, we love to teach useful skills that can be used in daily life and strengthen the body as well as the mind."
+  "activities": {
+    "title": "Activities"
+  },
+  "classes": {
+    "title": "Classes",
+    "description": "At Happy Island Senior Center, we love to teach useful skills that can be used in daily life and strengthen the body as well as the mind.",
+    "computer": {
+      "title": "Computer Classes",
+      "content": "<p>Unlock the digital world with Happy Island Senior Center&#39;s enriching Computer Classes. Designed for seniors at all tech levels, our hands-on courses offer a friendly and patient environment to master essential computer skills. From navigating the internet and using email to creating documents and connecting with loved ones on social media, our step-by-step guidance ensures confidence in the digital realm. Join us in a supportive community where learning transcends age, and tech novices become savvy navigators of the online landscape. Discover the joy of staying connected, exploring new horizons, and embracing technology with ease at Happy Island Senior Center&#39;s Computer Classes.</p><p><strong>Why Choose Our Computer Classes for Seniors?</strong></p><ul><li>Personalized Instruction: Tailored to your pace and needs, our classes cater to beginners and those looking to expand their skills.</li><li>Patient Guidance: Our experienced instructors make learning fun, providing patient support every step of the way.</li><li>Community Atmosphere: Learn in a welcoming environment where fellow seniors share the journey, fostering connections and camaraderie.</li><li>Practical Skills: Gain confidence in using computers for everyday tasks, enhancing independence and engagement.</li><li>Lifelong Learning: Embrace the power of technology and continue your learning journey in a way that suits your lifestyle.</li></ul><p>Embark on a digital adventure with us – Happy Island Senior Center&#39;s Computer Classes are your gateway to modern connectivity and discovery.</p>"
+    },
+    "language": {
+      "title": "English Classes",
+      "content": "<p>Our specially designed English classes are perfect for seniors who are new to the language. Whether you&#39;re just starting to learn or want to improve your skills, our friendly instructors are here to guide you every step of the way.</p><p>Our classes focus on practical communication skills that you can use in everyday situations. From introducing yourself to having conversations with friends, our goal is to help you feel confident using English in your daily life.</p><p>At Happy Island Senior Center, we understand that learning a new language can be both exciting and challenging. That&#39;s why we create a supportive and relaxed environment where you can learn at your own pace. Our classes are interactive and engaging, making learning enjoyable and effective.</p><p>Join us for a language-learning journey that not only enhances your communication abilities but also connects you with a community of fellow learners. Discover the joy of expressing yourself in English while building lasting friendships. Experience the power of language and connection at Happy Island Senior Center&#39;s English classes.</p>"
+    },
+    "arts_crafts": {
+      "title": "Arts & Crafts Classes",
+      "content": "<p>Our nurturing space is where creativity comes alive, and everyone is an artist. Join our Arts &amp; Crafts classes designed with you in mind. No experience needed – just the enthusiasm to explore, create, and connect.</p><p>Discover a delightful array of projects, from painting to pottery, all guided by our patient and skilled instructors. Unleash your imagination, whether you&#39;re crafting a vibrant canvas or molding clay into a masterpiece. Engage with fellow enthusiasts, forging friendships over shared interests.</p><p>Our Arts &amp; Crafts classes are more than just creating; they&#39;re about embracing the joy of self-expression and building a stronger community. Enhance cognitive abilities, boost confidence, and find tranquility in the artistic process.</p><p>Whether you&#39;re seeking a new hobby or want to revisit a long-lost passion, Happy Island&#39;s Arts &amp; Crafts classes welcome you. Immerse yourself in a world of colors, textures, and endless possibilities. Join us on a journey of creativity and camaraderie, where every stroke of the brush and every touch of clay tells a unique story.</p>"
+    },
+    "zumba": {
+      "title": "Zumba Classes",
+      "content": "<p>Our Zumba classes are specially designed for seniors who want to have fun while staying active and healthy. Zumba is a lively and enjoyable dance workout that doesn&#39;t require any prior experience. Our experienced instructors will guide you through easy-to-follow dance moves set to energetic music, making it perfect for beginners.</p><p>Engage in a low-impact cardio workout that benefits your heart, muscles, and overall well-being. Zumba also enhances coordination, flexibility, and balance, which are important for maintaining an active lifestyle as we age.</p><p>Join us for a Zumba class that brings smiles, laughter, and a sense of community. Enjoy the invigorating atmosphere while getting your body moving and grooving. Whether you&#39;re looking to meet new friends, boost your energy, or just have a great time, our Zumba class at Happy Island Senior Center is the perfect fit for you. Get ready to dance your way to a healthier and happier you!</p><p>Come shake it with us at Happy Island Senior Center&#39;s Zumba class and embark on a journey of fitness, joy, and togetherness. Your first class is on us! Don&#39;t miss out on this opportunity to have a blast while staying active.</p>"
+    },
+    "aerobics": {
+      "title": "Aerobics Classes",
+      "content": "<p>Welcome to the vibrant world of Zumba at Happy Island Senior Center, where fitness meets fun for our beloved seniors! Our Zumba classes are specially designed to bring joy and wellness to every step. Join us in lively, easy-to-follow dance routines that cater to all fitness levels, ensuring a safe and exciting workout for seniors.</p><p>Led by experienced instructors who prioritize senior care, our Zumba sessions offer a perfect blend of energetic movements and feel-good music. Experience the benefits of improved cardiovascular health, increased flexibility, and boosted mood, all in a welcoming and inclusive environment.</p><p>At Happy Island Senior Center, we&#39;re dedicated to promoting active and joyful aging. Our Zumba classes are a fantastic way to stay fit, socialize, and embrace the positive effects of exercise. Join our Zumba community today and let the rhythm guide you towards a healthier, happier you!</p><p>Discover the perfect balance of fitness and fun, tailored with senior care in mind, only at Happy Island Senior Center. Join our Zumba classes to dance, groove, and enjoy the journey of active aging. Your well-being is our priority!</p>"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "description": "Explore our caring services at Happy Island Senior Center. From wellness support to engaging activities, we're here to make every day special.",
+    "shuttle": {
+      "title": "Round Trip Door-to-Door Transportation",
+      "content": "<p>Experience convenience and care with our Round Trip Door-to-Door Transportation service for seniors in Manhattan, Brooklyn, and Staten Island. Our reliable and friendly drivers ensure a comfortable journey to and from our center, so you can fully enjoy our senior care programs worry-free. No need to stress about commuting – we've got you covered. Join our vibrant community and access top-notch transportation that's tailored just for seniors. Explore the city, attend classes, and connect with others without a hitch.</p>"
+    },
+    "meals": {
+      "title": "Two Meals a Day",
+      "content": "<p>Our dedicated team believes in offering the best to our cherished seniors, providing two delicious and nutritious meals daily. Our menu is thoughtfully curated to meet diverse tastes and dietary needs, ensuring a fulfilling culinary experience for everyone.</p><p>Each meal is prepared with utmost care, adhering to the highest standards of quality and nutrition. We take pride in offering Halal meals, crafted to cater to specific dietary preferences. Our commitment to your well-being is reflected in every bite you take.</p><p>At Happy Island Senior Center, we understand the importance of a balanced diet in promoting overall health and vitality. Our Two Meals a Day program not only nourishes your body but also brings a sense of community to the dining table. Join us in savoring delectable flavors while enjoying the camaraderie of fellow seniors.</p><p>Experience the joy of exceptional care, heartwarming companionship, and delicious Halal meals – all under one roof. Happy Island Senior Center is your destination for nourishment, connection, and holistic well-being.</p>"
+    },
+    "barber_beauty": {
+      "title": "Barber and Beauty Salon",
+      "content": "<p>Welcome to the Barber and Beauty Salon at Happy Island Senior Center, where pampering meets professionalism. Our dedicated salon team is here to provide top-notch grooming and beauty services tailored to seniors. Indulge in rejuvenating haircuts, hairstyling, and soothing spa treatments, all within a relaxing and safe environment. Our skilled stylists and barbers understand the unique needs of older adults and are committed to ensuring your comfort and satisfaction.</p><p>At Happy Island, we believe in enhancing not only your appearance but also your overall well-being. Our salon services are designed to boost confidence and promote a sense of self-care. Come experience the revitalizing touch of our experts as you unwind and enjoy a personalized makeover journey. Trust us to deliver quality care that accentuates your natural beauty.</p><p>Visit our Barber and Beauty Salon and leave feeling refreshed, confident, and truly pampered. Experience the essence of refined grooming for seniors, only at Happy Island Senior Center.</p>"
+    },
+    "social_workers": {
+      "title": "Social Care Workers",
+      "content": "<p>Welcome to Happy Island Senior Center – your hub of support and care. Our dedicated social workers are here to guide you through essential services, ensuring you live life to the fullest. Need help with food stamps? We&#39;ve got you covered. Our experts offer seamless application assistance, making sure you don&#39;t miss out on essential benefits.</p><p>Searching for comfortable senior housing? Look no further. We specialize in finding the perfect home tailored to your needs, making your golden years truly golden. Stay connected with a free phone service, keeping you in touch with loved ones effortlessly.</p><p>Curious about Consumer Directed Personal Assistance Program (CD-PAP)? Our team breaks it down for you. We&#39;re all about empowering you to make informed choices about your care. Our compassionate approach ensures your unique needs are met.</p><p>At Happy Island, we&#39;re not just a care center; we&#39;re your family. Our user-friendly website makes it easy to explore services, get answers to your questions, and take the next steps towards a worry-free, joyful life. Let us be your compass to navigate the sea of senior services, providing you a safe and happy haven. Reach out today and let us guide you towards a brighter tomorrow.</p>"
+    },
+    "gym": {
+      "title": "Gym",
+      "content": "<p>Our gym offers a range of equipment tailored for seniors, ensuring a safe and comfortable workout experience. Engage in invigorating exercise classes designed to enhance strength, flexibility, and overall health. Whether you're a fitness enthusiast or new to working out, our skilled instructors are here to guide you every step of the way. Embrace a healthier lifestyle with our holistic approach to senior fitness.</p>"
+    },
+    "pool": {
+      "title": "Pool",
+      "content": "<p>Welcome to the refreshing oasis of the Happy Island Senior Center's Swimming Pool! Dive into relaxation and invigoration in our accessible pool, designed with your comfort in mind. Whether you're a beginner or an experienced swimmer, our pool offers a safe and enjoyable experience. Immerse yourself in the soothing waters, perfect for therapeutic swims or simply unwinding. Our senior-friendly amenities ensure a worry-free aquatic adventure. Discover the joys of aquatic wellness at our Swimming Pool – a haven for relaxation, exercise, and community. Join us and make a splash toward a healthier, happier you!</p>"
+    }
+  },
+  "image.number": "Image {n}"
 }

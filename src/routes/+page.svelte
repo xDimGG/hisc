@@ -4,10 +4,36 @@ import { i } from '@inlang/sdk-js';
 let { innerWidth } = window;
 $: width = Math.max(Math.min(screen.width, innerWidth, 550) - 50, 180);
 
+import { LightboxGallery, GalleryImage, GalleryThumbnail } from 'svelte-lightbox';
+
+const thumbnails = [
+	'/photos/homepage/im-1-thumb-sm.avif',
+	'/photos/homepage/im-1-thumb-sm.avif',
+	'/photos/homepage/im-1-thumb-md.avif',
+	'/photos/homepage/im-1-thumb-sm.avif',
+	'/photos/homepage/im-1-thumb-sm.avif',
+	'/photos/homepage/im-1-thumb-md.avif',
+	'/photos/homepage/im-1-thumb-md.avif',
+];
+const images = [
+	'/photos/homepage/im-1.avif',
+	'/photos/homepage/im-1.avif',
+	'/photos/homepage/im-1.avif',
+	'/photos/homepage/im-1.avif',
+	'/photos/homepage/im-1.avif',
+	'/photos/homepage/im-1.avif',
+	'/photos/homepage/im-1.avif',
+];
 </script>
 
 <svelte:window bind:innerWidth />
 
+<svelte:head>
+	<title>{i("home.title")} - Happy Island</title>
+</svelte:head>
+
+<LightboxGallery>
+<svelte:fragment slot="thumbnail">
 <main class="mx-auto w-full max-w-screen-xl my-5">
 	<section class="text-gray-600 body-font">
 		<div class="container px-5 py-24 mx-auto flex flex-wrap">
@@ -16,24 +42,36 @@ $: width = Math.max(Math.min(screen.width, innerWidth, 550) - 50, 180);
 			<div class="flex flex-wrap md:-m-2 -m-1 md:flex-row flex-col">
 				<div class="flex flex-wrap md:w-1/2">
 					<div class="md:p-2 p-1 w-1/2">
-						<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300">
+						<GalleryThumbnail>
+							<img alt="gallery" class="w-full object-cover h-full object-center block" src={thumbnails[0]}>
+						</GalleryThumbnail>
 					</div>
 					<div class="md:p-2 p-1 w-1/2">
-						<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301">
+						<GalleryThumbnail>
+							<img alt="gallery" class="w-full object-cover h-full object-center block" src={thumbnails[1]}>
+						</GalleryThumbnail>
 					</div>
 					<div class="md:p-2 p-1 w-full">
-						<img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360">
+						<GalleryThumbnail>
+							<img alt="gallery" class="w-full h-full object-cover object-center block" src={thumbnails[2]}>
+						</GalleryThumbnail>
 					</div>
 				</div>
 				<div class="flex flex-wrap md:w-1/2">
 					<div class="md:p-2 p-1 w-full">
-						<img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/601x361">
+						<GalleryThumbnail>
+							<img alt="gallery" class="w-full h-full object-cover object-center block" src={thumbnails[3]}>
+						</GalleryThumbnail>
 					</div>
 					<div class="md:p-2 p-1 w-1/2">
-						<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/502x302">
+						<GalleryThumbnail>
+							<img alt="gallery" class="w-full object-cover h-full object-center block" src={thumbnails[4]}>
+						</GalleryThumbnail>
 					</div>
 					<div class="md:p-2 p-1 w-1/2">
-						<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/503x303">
+						<GalleryThumbnail>
+							<img alt="gallery" class="w-full object-cover h-full object-center block" src={thumbnails[5]}>
+						</GalleryThumbnail>
 					</div>
 				</div>
 			</div>
@@ -47,7 +85,9 @@ $: width = Math.max(Math.min(screen.width, innerWidth, 550) - 50, 180);
 				<p class="mb-8 leading-relaxed">{i("home.sec1.content")}</p>
 			</div>
 			<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-				<img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+				<GalleryThumbnail>
+					<img class="object-cover object-center rounded" alt="hero" src={thumbnails[6]}>
+				</GalleryThumbnail>
 			</div>
 		</div>
 	</section>
@@ -107,3 +147,12 @@ $: width = Math.max(Math.min(screen.width, innerWidth, 550) - 50, 180);
 		<iframe title="Our facebook page Happy Island Senior Center" class="mb-3 mx-auto" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FHappy-Island-Senior-Center-100063640447417%2F&tabs=timeline&width={width}&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=617662153119696" {width} height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 	</div>
 </main>
+</svelte:fragment>
+
+{#each images as image, index}
+	<GalleryImage>
+		<img src={image} alt={i("image.number", { n: index + 1 })}>
+	</GalleryImage>
+{/each}
+
+</LightboxGallery>
