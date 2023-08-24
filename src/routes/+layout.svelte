@@ -3,6 +3,7 @@ import '../app.postcss';
 import { language as languageStore, languageSet } from '../stores/language';
 import { page } from '$app/stores';
 import { i, switchLanguage } from '@inlang/sdk-js';
+import { navigating } from '$app/stores';
 
 let selectOpen = languageSet;
 
@@ -39,9 +40,12 @@ const PAGES = [
 
 let navOpen = false;
 
+$: if ($navigating) navOpen = false;
+
 const select = (lang) => {
 	selectOpen = false;
 	languageStore.set(lang);
+  console.log(`changed language to ${lang}`);
   switchLanguage(lang);
 };
 
@@ -70,10 +74,12 @@ $: path = $page.url.pathname;
   </div>
 </div>
 {:else}
+<div class="flex flex-col h-screen">
+
 <nav class="bg-blue-700 {navOpen ? 'open' : 'closed'}" style={`--max-height-var: ${PAGES.length * 44 + 16}px`}>
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
-      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+  <div class="mx-auto max-w-7xl px-2 py-0 sm:py-0 sm:px-6 lg:px-8">
+    <div class="relative grid grid-cols-header">
+      <div class="flex items-center sm:hidden">
         <button
           type="button"
           class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -82,13 +88,9 @@ $: path = $page.url.pathname;
 					on:click={() => navOpen = !navOpen}
         >
           <span class="sr-only">{i("tooltip.open_main_menu")}</span>
-          <!--
-						Icon when menu is closed.
 
-						Menu open: "hidden", Menu closed: "block"
-					-->
           <svg
-            class="block h-6 w-6"
+            class="{navOpen ? 'hidden' : 'block'} h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
@@ -101,13 +103,9 @@ $: path = $page.url.pathname;
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
-          <!--
-						Icon when menu is open.
 
-						Menu open: "block", Menu closed: "hidden"
-					-->
           <svg
-            class="hidden h-6 w-6"
+            class="{navOpen ? 'block' : 'hidden'} h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
@@ -122,24 +120,24 @@ $: path = $page.url.pathname;
           </svg>
         </button>
       </div>
-      <div class="flex flex-1 items-center justify-center sm:items-stretch">
-        <div class="flex flex-shrink-0 items-center">
-          <img class="block h-8 w-auto lg:hidden" src="/logo.jpeg" alt="HISC" />
-          <img class="hidden h-8 w-auto lg:block" src="/logo.jpeg" alt="HISC" />
-        </div>
-        <div class="hidden sm:ml-6 sm:block">
-          <div class="flex space-x-4">
+      <div class="flex items-center content-center py-0">
+        <img class="mx-auto block h-12 w-auto lg:hidden" src="/logo.png" alt="HISC" />
+        <img class="hidden h-8 lg:h-16 w-auto lg:block" src="/logo.png" alt="HISC" />
+      </div>
+      <div class="hidden sm:flex flex-1 items-center justify-center sm:items-stretch">
+        <div class="sm:ml-6 sm:flex py-2">
+          <div class="flex space-x-4 self-center">
             {#each PAGES as [name, href]}
               <a
                 {href}
-                class={`${path === href ? 'active' : 'inactive'} rounded-md px-3 py-2 text-sm font-medium`}
+                class={`${path === href ? 'active' : 'inactive'} rounded-md px-3 py-2 text-sm font-medium whitespace-nowrap`}
                 aria-current="page">{i(`${name}.title`)}</a
               >
             {/each}
           </div>
         </div>
       </div>
-      <div class="absolute inset-y-0 right-0 flex items-center cursor-pointer"  on:keypress={() => selectOpen = true}  on:click={() => selectOpen = true} role="button" tabindex="0">
+      <div class="inset-y-0 flex items-center justify-end cursor-pointer"  on:keypress={() => selectOpen = true}  on:click={() => selectOpen = true} role="button" tabindex="0">
         <img src={LANGUAGES[$languageStore].icon} alt={LANGUAGES[$languageStore].name} width="40" height="40" />
         <span class="sr-only">{i("tooltip.change_language")}</span>
       </div>
@@ -161,33 +159,36 @@ $: path = $page.url.pathname;
 
 <slot />
 
+<!-- fill in the gap between the footer and bottom of screen -->
+<div class="flex-grow"></div>
+
 <footer class="bg-blue-800">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
-        <a href="/" class="flex items-center">
+        <a href="/" class="flex items-center flex-wrap lg:flex-nowrap">
           <img
-            src="/logo.jpeg"
-            class="h-8 mr-3"
+            src="/logo.png"
+            class="w-full sm:w-auto sm:h-16 mr-3"
             alt="Happy Island Senior Center Logo"
           />
           <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            class="self-center text-2xl font-semibold text-white"
             >Happy Island Senior Center</span
           >
         </a>
       </div>
-      <div class="grid gap-8 sm:gap-6 grid-cols-1 md:grid-cols-3">
-        <div></div>
-        <div></div>
-        <div>
+      <div class="grid gap-8 sm:gap-6 grid-cols-1">
+        <!-- <div></div> -->
+        <!-- <div></div> -->
+        <div class="min-w-[250px]">
           <h2
-            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            class="mb-6 text-sm font-semibold uppercase text-white"
           >
             {i("footer.operating_hours")}
           </h2>
           <table
-            class="dark:text-gray-300 font-light border-none"
+            class="text-gray-300 font-light border-none"
             cellspacing="0"
             cellpadding="0"
           >
@@ -234,18 +235,60 @@ $: path = $page.url.pathname;
 				</div> -->
       </div>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-300 lg:my-8" />
+    <hr class="my-6 sm:mx-auto border-gray-300 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+      <span class="text-sm sm:text-center text-gray-400"
         >&#xa9; 2023 <a
-          href="https://Happy Island Senior Center.com/"
+          href="/"
           class="hover:underline">Happy Island Senior Center</a
         >. All Rights Reserved.
       </span>
-      <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+      <div class="flex mt-4 sm:space-x-4 sm:justify-center sm:items-center sm:mt-0 flex-col sm:flex-row">
+        <a
+          href="tel:718-980-0240"
+          class="text-gray-400 hover:text-white flex items-center"
+        >
+          <svg
+            class="w-4 h-4 mr-1.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 29 29"
+            xml:space="preserve"
+          >
+            <path
+              d="M20.666 27.021a5.907 5.907 0 0 1-2.934-.779l-.126-.071A39.137 39.137 0 0 1 3.491 12.355l-.657-1.095a5.849 5.849 0 0 1 .881-7.153l1.309-1.309c1.1-1.1 2.889-1.1 3.988 0l2.884 2.884a2.83 2.83 0 0 1 .464 3.378l-1.084 1.925a.213.213 0 0 0 .035.255l6.421 6.421a.216.216 0 0 0 .257.034l1.922-1.083.001-.001a2.832 2.832 0 0 1 3.378.464l2.885 2.886c1.1 1.1 1.1 2.889 0 3.988l-1.367 1.366a5.848 5.848 0 0 1-4.142 1.706zM7.018 3.973c-.21 0-.42.08-.58.24L5.129 5.521a3.85 3.85 0 0 0-.58 4.708l.657 1.095a37.13 37.13 0 0 0 13.389 13.107l.126.071c1.526.873 3.446.626 4.672-.602l1.367-1.366a.82.82 0 0 0 0-1.16l-2.885-2.886a.823.823 0 0 0-.983-.134l-1.922 1.083a2.222 2.222 0 0 1-2.652-.363l-6.421-6.421a2.218 2.218 0 0 1-.363-2.651l1.084-1.924a.824.824 0 0 0-.135-.982L7.598 4.213a.818.818 0 0 0-.58-.24z"
+            />
+          </svg>
+          <span class="sr-only">{i("contact.phone")}</span>
+          <span
+            href="tel:718-980-0240"
+            class="text-sm align-middle"
+          >(718-980-0240)</span>
+        </a>
+        <a
+          href="mailto:happyislandny.com"
+          class="text-gray-400 hover:text-white flex items-center"
+        >
+          <svg
+            class="w-4 h-4 mr-1.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="4 1 16 22"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path>
+          </svg>
+          <span class="sr-only">{i("contact.email")}</span>
+          <span
+            href="tel:718-980-0240"
+            class="text-sm align-middle"
+          >(happyislandny@gmail.com)</span>
+        </a>
         <a
           href="https://www.facebook.com/p/Happy-Island-Senior-Center-100063640447417/"
-          class="text-gray-400 hover:text-gray-50 dark:hover:text-white"
+          class="text-gray-400 hover:text-white"
+          target="_blank"
         >
           <svg
             class="w-4 h-4"
@@ -260,30 +303,14 @@ $: path = $page.url.pathname;
               clip-rule="evenodd"
             />
           </svg>
-          <span class="sr-only">Facebook page</span>
-        </a>
-        <a
-          href="tel:718-980-0240"
-          class="text-gray-400 hover:text-gray-50 dark:hover:text-white"
-        >
-          <svg
-            class="w-4 h-4"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 29 29"
-            xml:space="preserve"
-          >
-            <path
-              d="M20.666 27.021a5.907 5.907 0 0 1-2.934-.779l-.126-.071A39.137 39.137 0 0 1 3.491 12.355l-.657-1.095a5.849 5.849 0 0 1 .881-7.153l1.309-1.309c1.1-1.1 2.889-1.1 3.988 0l2.884 2.884a2.83 2.83 0 0 1 .464 3.378l-1.084 1.925a.213.213 0 0 0 .035.255l6.421 6.421a.216.216 0 0 0 .257.034l1.922-1.083.001-.001a2.832 2.832 0 0 1 3.378.464l2.885 2.886c1.1 1.1 1.1 2.889 0 3.988l-1.367 1.366a5.848 5.848 0 0 1-4.142 1.706zM7.018 3.973c-.21 0-.42.08-.58.24L5.129 5.521a3.85 3.85 0 0 0-.58 4.708l.657 1.095a37.13 37.13 0 0 0 13.389 13.107l.126.071c1.526.873 3.446.626 4.672-.602l1.367-1.366a.82.82 0 0 0 0-1.16l-2.885-2.886a.823.823 0 0 0-.983-.134l-1.922 1.083a2.222 2.222 0 0 1-2.652-.363l-6.421-6.421a2.218 2.218 0 0 1-.363-2.651l1.084-1.924a.824.824 0 0 0-.135-.982L7.598 4.213a.818.818 0 0 0-.58-.24z"
-            />
-          </svg>
-          <span class="sr-only">Phone number</span>
+          <span class="sr-only">{i("contact.facebook")}</span>
         </a>
       </div>
     </div>
   </div>
 </footer>
+
+</div>
 {/if}
 
 <style>

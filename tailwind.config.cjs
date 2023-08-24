@@ -3,7 +3,11 @@ const config = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
 
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        header: '1fr 3fr 1fr',
+      },
+    },
   },
 
   plugins: [],
