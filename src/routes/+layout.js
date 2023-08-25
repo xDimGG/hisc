@@ -3,3 +3,4 @@ It is needed in order to circumvent a current limitation of SvelteKit. See https
 You can remove this comment and modify the file as you like. We just need to make sure it exists.
 Please do not delete it (inlang will recreate it if needed). */
 export const prerender = true;
+export const trailingSlash = 'always'
