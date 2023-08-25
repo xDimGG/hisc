@@ -11,7 +11,7 @@ import { i } from '@inlang/sdk-js';
 
 <Heading title={i("classes.title")} content={i("classes.description")} photo="/photos/classes/background.jpeg" />
 
-<div class="container px-5 py-24 mx-auto">
+<div class="container px-5 py-24 mx-auto space-y-16">
 	
 	<Section
 		title={i("classes.computer.title")}

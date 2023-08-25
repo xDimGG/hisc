@@ -37,7 +37,7 @@ import { i } from '@inlang/sdk-js';
 
 <Heading title={i("${page}.title")} content={i("${page}.description")} photo="${background}" />
 
-<div class="container px-5 py-24 mx-auto">
+<div class="container px-5 py-24 mx-auto space-y-16">
 	${sections.map(({ name, photos, thumbnails }) => `
 	<Section
 		title={i("${page}.${name}.title")}
