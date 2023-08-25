@@ -2,6 +2,7 @@
 export let title;
 export let content;
 export let photos = [];
+export let thumbnails = [];
 
 import { LightboxGallery, GalleryImage, GalleryThumbnail } from 'svelte-lightbox';
 </script>
@@ -13,9 +14,9 @@ import { LightboxGallery, GalleryImage, GalleryThumbnail } from 'svelte-lightbox
 		<LightboxGallery>
 			<svelte:fragment slot="thumbnail">
 				<div class="flex flex-wrap gap-5 justify-around fill-grid">
-					{#each photos as photo}
+					{#each thumbnails as thumbnail}
 						<GalleryThumbnail>
-							<img class="max-h-[250px] object-contain" src={photo} alt={title}>
+							<img class="max-h-[250px] object-contain" src={thumbnail} alt={title}>
 						</GalleryThumbnail>
 					{/each}
 				</div>

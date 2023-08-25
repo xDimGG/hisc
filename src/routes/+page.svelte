@@ -7,22 +7,22 @@ $: width = Math.max(Math.min(screen.width, innerWidth, 550) - 50, 180);
 import { LightboxGallery, GalleryImage, GalleryThumbnail } from 'svelte-lightbox';
 
 const thumbnails = [
-	'/photos/homepage/im-1-thumb-sm.avif',
-	'/photos/homepage/im-1-thumb-sm.avif',
-	'/photos/homepage/im-1-thumb-md.avif',
-	'/photos/homepage/im-1-thumb-sm.avif',
-	'/photos/homepage/im-1-thumb-sm.avif',
-	'/photos/homepage/im-1-thumb-md.avif',
-	'/photos/homepage/im-1-thumb-md.avif',
+	'/photos/homepage/im-1-thumb-sm.jpeg',
+	'/photos/homepage/im-2-thumb-sm.jpeg',
+	'/photos/homepage/im-3-thumb-md.jpeg',
+	'/photos/homepage/im-4-thumb-md.jpeg',
+	'/photos/homepage/im-5-thumb-sm.jpeg',
+	'/photos/homepage/im-6-thumb-sm.jpeg',
+	'/photos/homepage/im-7-thumb-md.jpeg',
 ];
 const images = [
-	'/photos/homepage/im-1.avif',
-	'/photos/homepage/im-1.avif',
-	'/photos/homepage/im-1.avif',
-	'/photos/homepage/im-1.avif',
-	'/photos/homepage/im-1.avif',
-	'/photos/homepage/im-1.avif',
-	'/photos/homepage/im-1.avif',
+	'/photos/homepage/im-1.jpeg',
+	'/photos/homepage/im-2.jpeg',
+	'/photos/homepage/im-3.jpeg',
+	'/photos/homepage/im-4.jpeg',
+	'/photos/homepage/im-5.jpeg',
+	'/photos/homepage/im-6.jpeg',
+	'/photos/homepage/im-7.jpeg',
 ];
 </script>
 

@@ -64,6 +64,9 @@ const createThumbFrom = async (dir, file, thumbName, thumbWidth, thumbHeight) =>
 		thumbWidth = Math.ceil((width / height) * thumbHeight);
 	}
 
+	// don't rerender if it exists already
+	if (fs.existsSync(path.join(dir, thumbName))) return thumbName;
+
 	await f.resize(thumbWidth, thumbHeight).toFile(path.join(dir, thumbName));
 
 	return thumbName;

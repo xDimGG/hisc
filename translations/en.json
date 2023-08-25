@@ -6,9 +6,9 @@
   "tooltip.change_language": "Change language",
   "footer.operating_hours": "Operating Hours",
   "home.sec1.title": "Who are We",
-  "home.sec1.content": "Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.",
+  "home.sec1.content": "Happy Island Senior Center is a social adult day care whose goal is to provide a comfortable and enjoyable experience for the elderly. Our center offers a range of services, activities, and classes tailored to seniors, helping them stay active, engaged, and connected. We pride ourselves on the community that our center creates and our welcoming atmosphere.",
   "home.sec2.title": "Where are We",
-  "home.sec2.content": "Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.",
+  "home.sec2.content": "Happy Island Senior Center is located at 555 Greeley Avenue, Staten Island, NY. We provide door-to-door transportation that will pick you up in Staten Island, Brooklyn, and Manhattan.",
   "home.follow_fb": "Follow us on Facebook!",
   "contact.greet": "Any questions regarding our service? Please reach out and allow us to assist you!",
   "contact.form.email": "Your email",
@@ -25,7 +25,44 @@
   "contact.facebook": "Facebook Page",
   "home.medicaid": "Free for seniors 65+ with Medicaid and Medicare",
   "activities": {
-    "title": "Activities"
+    "title": "Activities",
+    "description": "Discover engaging activities at Happy Island Senior Center. From gentle exercises to creative crafts, find joy and connection in every moment.",
+    "outings": {
+      "title": "Outings",
+      "content": "<p>Join us for exciting trips to museums, live music events, and shopping destinations. Our outings are tailored to provide joy and engagement for seniors. Explore cultural exhibits, tap your toes to live tunes, and indulge in retail therapy – all in the company of fellow adventurers. With Happy Island, every outing is a chance to make new friends and cherish shared experiences. Immerse yourself in the world beyond our doors, creating lasting memories while enjoying the golden years. Join our outings today and let's embark on unforgettable journeys together!</p>"
+    },
+    "holidays": {
+      "title": "Holiday Celebrations",
+      "content": "<p>Join us in creating cherished memories during special occasions. Our senior-friendly festivities bring warmth and happiness, fostering a close-knit community. From festive decorations to heartwarming activities, each event is thoughtfully designed for your enjoyment. Celebrate holidays with ease, surrounded by friends who share the spirit of togetherness. At Happy Island, we're dedicated to making your holidays truly special. Discover a place where laughter, joy, and belonging come together. Explore our holiday calendar and be part of the festivities that make every season magical. Join in the merriment at Happy Island Senior Center, your home for delightful holiday celebrations.</p>"
+    },
+    "games": {
+      "title": "Games",
+      "content": "<p>Welcome to the Happy Island Senior Center&#39;s Games Corner, where we believe that having fun knows no age limits! Our center is your one-stop destination for an array of engaging games and activities specially designed for seniors. We&#39;ve created a warm and welcoming space where you can enjoy quality time, make friends, and sharpen your mental and physical skills.</p><p><strong>Bingo:</strong> Join the thrill of Bingo as you mark off numbers and shout &quot;Bingo!&quot; It&#39;s a fantastic way to socialize and test your luck.</p><p><strong>Billiards:</strong> Try your hand at billiards, a classic game of strategy and precision. You&#39;ll love the challenge and camaraderie it brings.</p><p><strong>Ping Pong:</strong> Get your heart pumping with a game of ping pong. It&#39;s not only fun but also great for hand-eye coordination and staying active.</p><p><strong>Chess:</strong> Challenge your mind with chess, the ultimate game of strategy. It&#39;s a brilliant way to exercise your brain while having a blast.</p><p><strong>Cards and Dominoes:</strong> Whether you prefer cards or dominoes, we have plenty of tables for you to enjoy these timeless games. Gather your friends and start playing!</p><p>At Happy Island Senior Center, we know the importance of staying mentally and physically active, and games are a fantastic way to do that. Plus, it&#39;s a wonderful opportunity to socialize and make new friends who share your interests.</p><p>Come join us at Happy Island Senior Center&#39;s Games Corner for a world of fun, laughter, and friendly competition. We can&#39;t wait to see you here, ready for some excitement and great times!</p>"
+    },
+    "dancing": {
+      "title": "Dancing",
+      "content": "<p>Our stage comes alive with melodies that invite everyone to dance and celebrate. Feel the music's embrace as you sway to familiar tunes and new beats. Whether you're a seasoned dancer or just starting out, our dance floor welcomes all. Let the music uplift your spirit and energize your heart – it's a perfect recipe for smiles and laughter. Join us for memorable moments filled with toe-tapping tunes and a sense of togetherness. Discover the magic of music and dance at Happy Island Senior Center – your destination for music, movement, and endless smiles.</p>"
+    },
+    "culinary_club": {
+      "title": "Culinary Club",
+      "content": "<p>Welcome to the Culinary Club at Happy Island Senior Center! Our flavorful community is a place where delicious food and wonderful friendships come together. If you&#39;re new to cooking or just love trying new recipes, you&#39;re in for a treat!</p><p>Explore our culinary adventures tailored for novice cooks. Our step-by-step cooking sessions make it easy to create mouthwatering dishes. Discover diverse cuisines, from comfort classics to international delights. Plus, we spice things up with friendly cooking contests, where you can showcase your skills and win awesome prizes!</p><p>Join us to savor the joy of cooking, share laughter, and build connections. Whether you&#39;re flipping your first pancake or a seasoned chef, our Culinary Club is a place of fun and flavor. Let&#39;s stir up some excitement and make every meal a memorable masterpiece! Don&#39;t miss out – sign up today and become a part of our savory journey.</p>"
+    },
+    "karaoke": {
+      "title": "Karaoke",
+      "content": "<p>Get ready to sing your heart out in a relaxed and supportive setting. Our Karaoke page is all about fun and connection, where you can let your inner star shine. Whether you're a seasoned performer or trying karaoke for the first time, you're in for a blast. Join us for memorable music moments that bring laughter and joy to our vibrant senior community. Let your favorite tunes create unforgettable memories. Come and be part of the Happy Island karaoke family today! Sing, smile, and share the spotlight with friends old and new. Karaoke – it's your time to shine!</p>"
+    },
+    "acting": {
+      "title": "Acting",
+      "content": "<p>Join our fun-filled acting sessions crafted exclusively for seniors. Express yourself, boost confidence, and unleash creativity through drama. Our senior-friendly acting program is designed to bring joy, laughter, and a sense of accomplishment. No experience needed – just a willingness to explore and have a great time. Discover the power of storytelling and build friendships in a supportive community. Dive into engaging activities that stimulate the mind and heart. At Happy Island Senior Center, we're your stage for vibrant senior living. Unleash your inner actor today!</p>"
+    },
+    "exercise": {
+      "title": "Daily Aerobic Exercises",
+      "content": "<p>Welcome to Happy Island Senior Center's invigorating daily exercise and aerobics sessions! Our specially designed programs are tailored for seniors of all fitness levels. Join our friendly instructors for heart-pumping workouts that promote flexibility, strength, and overall well-being. Whether you're new to exercise or a seasoned enthusiast, our inclusive atmosphere ensures a comfortable and enjoyable experience. Stay active, socialize, and embrace a healthier lifestyle in a supportive community that values your vitality. Discover the benefits of daily movement for enhanced energy and longevity.</p>"
+    },
+    "trivia": {
+      "title": "Trivia",
+      "content": "<p>Get ready for fun facts, friendly competition, and brain-boosting games. Our trivia sessions are designed with simplicity in mind, perfect for those new to English. Join us for a delightful journey of discovery, where you can share knowledge, make new friends, and spark your curiosity. Whether you're a seasoned quizmaster or a beginner, our trivia events are tailored for all levels. Come laugh, learn, and engage in a welcoming atmosphere that celebrates both learning and leisure.</p>"
+    }
   },
   "classes": {
     "title": "Classes",
@@ -42,13 +79,9 @@
       "title": "Arts & Crafts Classes",
       "content": "<p>Our nurturing space is where creativity comes alive, and everyone is an artist. Join our Arts &amp; Crafts classes designed with you in mind. No experience needed – just the enthusiasm to explore, create, and connect.</p><p>Discover a delightful array of projects, from painting to pottery, all guided by our patient and skilled instructors. Unleash your imagination, whether you&#39;re crafting a vibrant canvas or molding clay into a masterpiece. Engage with fellow enthusiasts, forging friendships over shared interests.</p><p>Our Arts &amp; Crafts classes are more than just creating; they&#39;re about embracing the joy of self-expression and building a stronger community. Enhance cognitive abilities, boost confidence, and find tranquility in the artistic process.</p><p>Whether you&#39;re seeking a new hobby or want to revisit a long-lost passion, Happy Island&#39;s Arts &amp; Crafts classes welcome you. Immerse yourself in a world of colors, textures, and endless possibilities. Join us on a journey of creativity and camaraderie, where every stroke of the brush and every touch of clay tells a unique story.</p>"
     },
-    "zumba": {
-      "title": "Zumba Classes",
-      "content": "<p>Our Zumba classes are specially designed for seniors who want to have fun while staying active and healthy. Zumba is a lively and enjoyable dance workout that doesn&#39;t require any prior experience. Our experienced instructors will guide you through easy-to-follow dance moves set to energetic music, making it perfect for beginners.</p><p>Engage in a low-impact cardio workout that benefits your heart, muscles, and overall well-being. Zumba also enhances coordination, flexibility, and balance, which are important for maintaining an active lifestyle as we age.</p><p>Join us for a Zumba class that brings smiles, laughter, and a sense of community. Enjoy the invigorating atmosphere while getting your body moving and grooving. Whether you&#39;re looking to meet new friends, boost your energy, or just have a great time, our Zumba class at Happy Island Senior Center is the perfect fit for you. Get ready to dance your way to a healthier and happier you!</p><p>Come shake it with us at Happy Island Senior Center&#39;s Zumba class and embark on a journey of fitness, joy, and togetherness. Your first class is on us! Don&#39;t miss out on this opportunity to have a blast while staying active.</p>"
-    },
-    "aerobics": {
-      "title": "Aerobics Classes",
-      "content": "<p>Welcome to the vibrant world of Zumba at Happy Island Senior Center, where fitness meets fun for our beloved seniors! Our Zumba classes are specially designed to bring joy and wellness to every step. Join us in lively, easy-to-follow dance routines that cater to all fitness levels, ensuring a safe and exciting workout for seniors.</p><p>Led by experienced instructors who prioritize senior care, our Zumba sessions offer a perfect blend of energetic movements and feel-good music. Experience the benefits of improved cardiovascular health, increased flexibility, and boosted mood, all in a welcoming and inclusive environment.</p><p>At Happy Island Senior Center, we&#39;re dedicated to promoting active and joyful aging. Our Zumba classes are a fantastic way to stay fit, socialize, and embrace the positive effects of exercise. Join our Zumba community today and let the rhythm guide you towards a healthier, happier you!</p><p>Discover the perfect balance of fitness and fun, tailored with senior care in mind, only at Happy Island Senior Center. Join our Zumba classes to dance, groove, and enjoy the journey of active aging. Your well-being is our priority!</p>"
+    "fitness": {
+      "title": "Fitness Classes",
+      "content": "<p>Our center is dedicated to promoting active and healthy lifestyles for seniors of all levels. Our fitness classes are designed with your needs in mind, focusing on gentle exercises that help improve strength, flexibility, and overall well-being.</p><p>Join our friendly and supportive community as we engage in low-impact workouts, chair exercises, and relaxing stretches. Our expert instructors ensure a safe and comfortable environment for everyone, from beginners to those with more experience.</p><p>At Happy Island Senior Center, we believe that fitness is for everyone, no matter your age or fitness level. Come join us in our fitness classes and embrace a healthier, happier you. Get moving with us today!</p>"
     }
   },
   "services": {
