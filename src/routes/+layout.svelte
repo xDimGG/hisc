@@ -39,6 +39,7 @@ const PAGES = [
 ];
 
 let navOpen = false;
+let navHeight;
 
 $: if ($navigating) navOpen = false;
 
@@ -76,8 +77,11 @@ $: path = $page.url.pathname;
 {:else}
 <div class="flex flex-col h-screen">
 
-<nav class="bg-blue-700 {navOpen ? 'open' : 'closed'}" style={`--max-height-var: ${PAGES.length * 44 + 16}px`}>
-  <div class="mx-auto max-w-7xl px-2 py-0 sm:py-0 sm:px-6 lg:px-8">
+<nav
+  class="bg-blue-700 {navOpen ? 'open' : 'closed'} fixed w-full z-20 top-0 left-0 border-b border-gray-200"
+  style={`--max-height-var: ${PAGES.length * 44 + 16}px`}
+>
+  <div class="mx-auto max-w-7xl px-2 py-0 sm:py-0 sm:px-6 lg:px-8" bind:clientHeight={navHeight}>
     <div class="relative grid grid-cols-header">
       <div class="flex items-center sm:hidden">
         <button
@@ -120,10 +124,12 @@ $: path = $page.url.pathname;
           </svg>
         </button>
       </div>
-      <div class="flex items-center content-center py-0">
-        <img class="mx-auto block h-12 w-auto lg:hidden" src="/logo.png" alt="HISC" />
-        <img class="hidden h-8 lg:h-16 w-auto lg:block" src="/logo.png" alt="HISC" />
-      </div>
+      <a href="/">
+        <div class="flex items-center content-center py-0">
+          <img class="mx-auto block h-12 w-auto lg:hidden" src="/logo.png" alt="HISC" />
+          <img class="hidden h-8 lg:h-16 w-auto lg:block" src="/logo.png" alt="HISC" />
+        </div>
+      </a>
       <div class="hidden sm:flex flex-1 items-center justify-center sm:items-stretch">
         <div class="sm:ml-6 sm:flex py-2">
           <div class="flex space-x-4 self-center">
@@ -156,6 +162,9 @@ $: path = $page.url.pathname;
     </div>
   </div>
 </nav>
+
+<!-- space the content away from the navbar -->
+<div style="margin-bottom: {navHeight}px"></div>
 
 <slot />
 

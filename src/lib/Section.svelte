@@ -8,8 +8,8 @@ import { LightboxGallery, GalleryImage, GalleryThumbnail } from 'svelte-lightbox
 </script>
 
 <div>
-	<p class="indent-5 text-4xl border-b border-gray-800 pb-3 mb-2">{title}</p>
-	<div class="mx-5 markdown space-y-5">
+	<p class="px-5 text-4xl border-b border-gray-800 pb-3 mb-2">{title}</p>
+	<div class="px-5 markdown space-y-5">
 		<div class="markdown">{@html content}</div>
 		<LightboxGallery>
 			<svelte:fragment slot="thumbnail">

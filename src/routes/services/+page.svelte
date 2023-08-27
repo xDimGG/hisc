@@ -9,7 +9,7 @@ import { i } from '@inlang/sdk-js';
 	<title>{i("services.title")} - Happy Island</title>
 </svelte:head>
 
-<Heading title={i("services.title")} content={i("services.description")} photo="/photos/services/undefined" />
+<Heading title={i("services.title")} content={i("services.description")} photo="/photos/services/background.jpg" />
 
 <div class="container px-5 py-24 mx-auto space-y-16">
 	
