@@ -32,10 +32,10 @@ const LANGUAGES = {
 
 const PAGES = [
   ['home', '/'],
-  ['services', '/services'],
-  ['activities', '/activities'],
-  ['classes', '/classes'],
-  ['contact', '/contact'],
+  ['services', '/services/'],
+  ['activities', '/activities/'],
+  ['classes', '/classes/'],
+  ['contact', '/contact/'],
 ];
 
 let navOpen = false;
