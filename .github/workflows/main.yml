@@ -14,6 +14,7 @@ jobs:
     name: Create thumbnails, generate files, build site, and deploy to gh-pages
     steps:
       - run: git clone https://github.com/${{github.repository}}
+      - run: cd "$(basename "$_" .git)"
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
