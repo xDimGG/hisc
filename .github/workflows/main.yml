@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+    name: Create thumbnails, generate files, build site, and deploy to gh-pages
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.3.0
+      - run: npm i
+      - run: npm run deploy
