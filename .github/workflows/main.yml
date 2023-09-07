@@ -12,15 +12,17 @@ jobs:
   build-site:
     runs-on: ubuntu-latest
     name: Create thumbnails, generate files, build site, and deploy to gh-pages
+    env:
+      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
-      - run: git clone https://github.com/${{github.repository}}
-      - run: cd ${{ github.event.repository.name }}
+      - uses: actions/checkout@v3
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 20.3.0
       - run: npm i
       - run: |
-          git config --global user.name "CI Site Gen"
-          git config --global user.email "username@users.noreply.github.com"
+          git config --global user.name "gh-actions"
+          git config --global user.email "gh-actions@github.com"
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${{github.repository}}.git
       - run: npm run deploy
