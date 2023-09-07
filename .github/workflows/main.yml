@@ -1,7 +1,12 @@
+name: Auto Deploy on Master Push
+
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write
 
 jobs:
   build-site:
@@ -14,4 +19,7 @@ jobs:
         with:
           node-version: 20.3.0
       - run: npm i
+      - run: |
+          git config --global user.name "CI Site Gen"
+          git config --global user.email "username@users.noreply.github.com"
       - run: npm run deploy
