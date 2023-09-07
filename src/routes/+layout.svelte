@@ -125,9 +125,9 @@ $: path = $page.url.pathname;
         </button>
       </div>
       <a href="/">
-        <div class="flex items-center content-center py-0">
-          <img class="mx-auto block h-12 w-auto lg:hidden" src="/logo.png" alt="HISC" />
-          <img class="hidden h-8 lg:h-16 w-auto lg:block" src="/logo.png" alt="HISC" />
+        <div class="flex items-center content-center py-0 h-full">
+          <img class="mx-auto object-contain block h-16 w-auto lg:hidden" src="/logo.png" alt="HISC" />
+          <img class="hidden object-contain h-16 lg:h-20 w-auto lg:block" src="/logo.png" alt="HISC" />
         </div>
       </a>
       <div class="hidden sm:flex flex-1 items-center justify-center sm:items-stretch">
@@ -177,9 +177,9 @@ $: path = $page.url.pathname;
       <div class="mb-6 md:mb-0">
         <a href="/" class="flex items-center flex-wrap lg:flex-nowrap">
           <img
-            src="/logo.png"
+            src="/banner.png"
             class="w-full sm:w-auto sm:h-16 mr-3"
-            alt="Happy Island Senior Center Logo"
+            alt="Happy Island Senior Center Banner"
           />
           <span
             class="self-center text-2xl font-semibold text-white"
